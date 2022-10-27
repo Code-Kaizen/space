@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/space.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0% 3rem 3rem;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 7rem;
+    background: linear-gradient(to bottom, #4d6d6d65 -58%, #0e2a46 126%);
+}
+.nav hr {
+    position: absolute;
+    left: 12rem;
+    width: 470px;
+    border-color: #2b3641;
+    background-color: #2b3641;
+    border-top: #2b3641;
+    height: 1.5px;
+}
+h1 {
+    color: aliceblue;
+    font-size: 40px;
+}
+.nav li {
+    list-style-type: none;
+}
+.nav a{
+    text-decoration:none;
+    margin: 0 17px;
+    color: rgb(182, 182, 182);
+    position: relative;
+}
+.nav span {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 8px;
+}
+.text span {
+    font-size: 120px;
+    font-weight: 400;
+    font-family: montserat;
+    height: 100px;
+    color: white;
+    padding: 3rem 0 3rem 0;
+    position: relative;
+    cursor: pointer;
+}
+.text {
+margin-top: 10%;
+width: 400px;
+margin-left: 15rem;
+padding: 1rem;
+}
+.text h2, p{
+    color: #cbcccc;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.explore {
+    position:absolute;
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    right: 15%;
+    top: 60%;
+    border-radius: 50%;
+}
+.explore a{
+    text-decoration: none;
+    position: absolute;
+    right: 25%;
+    top: 46%;
+    color: black;
+    font-size: 25px;
+    font-family: montserat;
+    font-weight: 400;
+}
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-out;
+}
+.nav a:hover::before {
+    width: 100%;
+}
+
+.explore a:before {
+    content: "";
+    position: absolute;
+    font-size: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2.2px;
+    background-color: red;
+    transition: width 0.5s ease-out;
+}
+.explore a:hover::before {
+    width: 100%;
+}
